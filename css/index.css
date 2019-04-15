@@ -1,6 +1,3 @@
-/* Main Primary color */
-/* Main Secondary color (1) */
-/* Main Secondary color (2) */
 /* Main Complement color */
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -139,7 +136,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #1FB55C;
+  color: #617BC9;
 }
 h1,
 h2,
@@ -147,7 +144,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #67D493;
+  color: #617BC9;
 }
 h1 {
   font-size: 4rem;
@@ -179,7 +176,7 @@ p {
   align-content: center;
   justify-content: center;
   background-color: black;
-  min-width: 300px;
+  min-width: 500px;
   font-family: 'Asap', sans-serif;
 }
 .container .hdr-mn {
@@ -188,13 +185,6 @@ p {
 }
 .container .hdr-mn h2 {
   margin: 2% 0 5%;
-}
-.container .icons {
-  display: flex;
-  font-size: 3rem;
-  align-content: center;
-  justify-content: space-around;
-  margin-bottom: 3%;
 }
 .container .menu {
   display: none;
@@ -223,9 +213,22 @@ p {
   font-family: 'Asap', sans-serif;
   text-align: center;
 }
-.content h1 {
+.imgs {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  margin-bottom: 3%;
+  width: 50%;
+  margin: 5% auto;
+}
+.content h1,
+.content h2 {
+  text-align: center;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+.content p {
+  font-size: 2rem;
 }
 .content ul {
   margin-left: 1rem;
@@ -261,4 +264,8 @@ p {
     background-color: black;
     color: pink;
   }
+}
+footer {
+  margin: 5% 0;
+  text-align: center;
 }
