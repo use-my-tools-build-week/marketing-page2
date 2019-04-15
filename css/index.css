@@ -1,0 +1,262 @@
+/* Main Primary color */
+/* Main Secondary color (1) */
+/* Main Secondary color (2) */
+/* Main Complement color */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #1FB55C;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #67D493;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  margin: 0.5rem;
+}
+.container {
+  min-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background-color: #FC532B;
+  min-width: 300px;
+  font-family: 'Asap', sans-serif;
+}
+.container .hdr-mn {
+  text-align: center;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.container .hdr-mn h2 {
+  margin-top: -3vh;
+  margin-bottom: 5vh;
+}
+.container .icons {
+  display: flex;
+  font-size: 3rem;
+  align-content: center;
+  justify-content: space-around;
+  margin-bottom: 3%;
+}
+.container .menu {
+  display: none;
+}
+.container .menu--open {
+  font-size: 3rem;
+  text-align: center;
+}
+.container .menu-button {
+  cursor: pointer;
+}
+.container nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.container nav a {
+  border: 3px solid grey;
+  padding: 0.5rem;
+  margin: 0 10% 1rem 10%;
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+  background-color: #FF957C;
+  font-family: 'Asap', sans-serif;
+  text-align: center;
+}
+.content h1 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.content ul {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+@media (min-width: 600px) {
+  .container {
+    background-color: #FCDF2B;
+  }
+  .container nav a {
+    background-color: #FFED7C;
+    color: black;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    background-color: #542CAD;
+  }
+  .container .fa-hamburger {
+    display: none;
+  }
+  .container .menu {
+    display: flex;
+  }
+  .container nav {
+    display: flex;
+    flex-direction: row;
+  }
+  .container nav a {
+    width: 15%;
+    margin: 0 auto;
+    font-size: 1.7rem;
+    background-color: #8D6FCF;
+    color: pink;
+  }
+}
