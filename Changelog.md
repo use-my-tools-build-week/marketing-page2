@@ -16,4 +16,10 @@ Commits 6-13
 * Added my LESS to my page
 * Added my JS to my page
 
-Commits 14-
+Commits 14-22
+
+* Added Images
+* Updated the HTML and LESS
+* Upated the Changelog
+
+Commits 22-
