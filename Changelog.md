@@ -8,7 +8,12 @@ Initial Commits 1-5
 * Updated Readme file
 
 
-Commits 6-  
+Commits 6-9  
 * Added to changelog
 * Created and added index.html
 * Added LESS tree
+* Added my html to my page
+* Added my LESS to my page
+* Added my JS to my page
+
+Commits 9-
