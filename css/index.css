@@ -134,7 +134,7 @@ table {
   box-sizing: border-box;
 }
 html {
-  font-size: 62.5%;
+  font-size: 8px;
 }
 html,
 body {
@@ -166,16 +166,19 @@ p {
   margin: 0.5rem;
 }
 .container {
-  min-width: 800px;
+  min-width: 1000px;
   width: 100%;
-  margin: 0 auto;
+  margin: 3% auto;
+}
+.hdr-mn {
+  margin-top: 10px;
 }
 .container {
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  background-color: #FC532B;
+  background-color: black;
   min-width: 300px;
   font-family: 'Asap', sans-serif;
 }
@@ -184,8 +187,7 @@ p {
   font-family: 'Noto Sans TC', sans-serif;
 }
 .container .hdr-mn h2 {
-  margin-top: -3vh;
-  margin-bottom: 5vh;
+  margin: 2% 0 5%;
 }
 .container .icons {
   display: flex;
@@ -217,7 +219,7 @@ p {
   text-decoration: none;
   color: white;
   font-size: 1.4rem;
-  background-color: #FF957C;
+  background-color: black;
   font-family: 'Asap', sans-serif;
   text-align: center;
 }
@@ -229,18 +231,18 @@ p {
   margin-left: 1rem;
   margin-right: 1rem;
 }
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .container {
-    background-color: #FCDF2B;
+    background-color: black;
   }
   .container nav a {
-    background-color: #FFED7C;
+    background-color: black;
     color: black;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .container {
-    background-color: #542CAD;
+    background-color: black;
   }
   .container .fa-hamburger {
     display: none;
@@ -256,7 +258,7 @@ p {
     width: 15%;
     margin: 0 auto;
     font-size: 1.7rem;
-    background-color: #8D6FCF;
+    background-color: black;
     color: pink;
   }
 }
