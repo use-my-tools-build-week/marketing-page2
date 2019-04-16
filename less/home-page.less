@@ -23,7 +23,7 @@
   }
   .menu--open{
     // display:none;
-    font-size:3rem;
+    font-size:5rem;
     text-align:center;
   }
   .menu-button{
@@ -40,11 +40,12 @@
       padding:.50rem;
       margin: 0 10% 1rem 10%;
       text-decoration:none;
-      color:white;
-      font-size:1.4rem;
+      color:@c-c-0;
+      font-size:2.4rem;
       background-color:black;
       font-family:@ft3;
       text-align:center;
+      background-color: @c-c-1;
     }
   }
 }
@@ -76,32 +77,54 @@
   .container{
     background-color:black;
     nav a{
-      background-color:black;
-      color:black;
+      background-color:@c-c-1;
+      color: @c-c-0;
+      font-size: 2.4rem;
     }
   }
 }
 
-@media (min-width:1000px){
-  .container{
-    background-color:black;
-    .fa-hamburger{
-      display:none;
+@media (min-width:1000px) {
+  .container {
+    background-color: black;
+
+    .fa-tools {
+      display: none;
     }
-    .menu{
-      display:flex;
+
+    .menu {
+      display: flex;
     }
-    nav{
-      display:flex;
-      flex-direction:row;
+
+    nav {
+      display: flex;
+      flex-direction: row;
       // display: inline-block;
       a {
-        width:15%;
+        width: 16%;
         margin: 0 auto;
-        font-size:1.7rem;
-        background-color:black;
-        color:pink;
+        font-size: 2.7rem;
+        background-color: @c-c-1;
+        color: @c-c-0;
       }
+    }
+  }
+
+  .content {
+    //border: 3px solid red;
+    display: flex;
+    flex-wrap: wrap;
+
+    .container-1, .container-2 {
+      margin: 5% .5%;
+      //border: 3px solid blue;
+      width: 48%;
+    }
+
+    .container-3, .container-4 {
+      margin: 5% .5%;
+      //border: 3px solid blue;
+      width: 48%;
     }
   }
 }
