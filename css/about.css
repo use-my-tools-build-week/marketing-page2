@@ -252,13 +252,14 @@ nav a {
   .container .menu {
     display: flex;
   }
-  .container nav {
+  .container header nav {
     display: flex;
     flex-direction: row;
   }
-  .container nav a {
-    width: 16%;
-    margin: 0 auto;
+  .container header nav a {
+    width: 22%;
+    margin: 0 15%;
+    padding: 2%;
     font-size: 2.7rem;
     margin-bottom: 5%;
   }
@@ -310,9 +311,6 @@ nav a {
   background-color: white;
   color: black;
 }
-.tabs .tabs-link-selected:hover {
-  background-color: white;
-}
 .tabs .tabsht .tab-image img {
   width: 25%;
 }
@@ -332,7 +330,6 @@ nav a {
 }
 @media (min-width: 1000px) {
   .tabs {
-    width: 90%;
     margin: 0 auto;
   }
   .tabs .tabs-link {
