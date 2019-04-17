@@ -1,75 +1,19 @@
-.container {
-  display:flex;
-  flex-direction:column;
-  align-content:center;
-  justify-content:center;
-  background-color:black;
-  min-width:500px;
-  font-family:@ft3;
-  //height: 1000px;
-  .hdr-mn{
-    text-align:center;
-    font-family:@ft5;
-    h2{
-      margin: 2% 0 5%;
-  }}
 
-  .menu{
-    display:none;
-    // font-size: 3rem;
-    // text-align:center;
-    // margin: 0 50% 0 45%;
-
-  }
-  .menu--open{
-    // display:none;
-    font-size:5rem;
-    text-align:center;
-  }
-  .menu-button{
-    // display:none;
-    cursor:pointer;
-  }
-  nav{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    width:100%;
-    a{
-      border:3px solid grey;
-      padding:.50rem;
-      margin: 0 10% 1rem 10%;
-      text-decoration:none;
-      color:@c-c-0;
-      font-size:2.4rem;
-      background-color:black;
-      font-family:@ft3;
-      text-align:center;
-      background-color: @c-c-1;
-    }
-  }
-}
 .imgs{
-  display:flex;
-  //font-size:3rem;
-  // text-align:center;
-  align-content:center;
-  justify-content: space-around;
-  margin-bottom:3%;
-  width: 50%;
-  margin: 5% auto;
-}
-.content {
-  border: 3px solid red;
-  display: flex;
-  flex-wrap: wrap;
-
-  .container-1, .container-2, .container-3, .container-4  {
+  .flex(space-around);
+   margin-bottom:3%;
+   width: 90%;
+  .content {
+    //border: 3px solid red;
+    //display: flex;
+    //flex-wrap: wrap;
+  }}
+  .container1{
     margin: 5% .5%;
     width: 99%;
 
     p{
-      font-size: 2.3rem;
+      font-size: 2.1rem;
     }
     ul, li{
       font-size: 2.3rem;
@@ -78,71 +22,47 @@
     li{
       margin-left: 2rem;
     }
-  }}
-@media (min-width:800px){
-  .container{
-    background-color:black;
-    nav a{
-      background-color:@c-c-1;
-      color: @c-c-0;
-      font-size: 2.4rem;
-    }
   }
-}
+  @media @tab {
 
-@media (min-width:1000px) {
-  .container {
-    background-color: black;
+      nav a {
+        font-size: 2.8rem;
+      }
+     }
+@media @desk{
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 
-    .fa-tools {
-      display: none;
-    }
+    .container1 {
+      //display: flex;
+      //justify-content: center;
+      //align-content: center;
+      margin: 5% .5%;
+      //border: 3px solid blue;
+      width: 48%;
+      //p, ul, li{
+      //}
+      h1 {
+        text-align: center;
+        //margin:1% 10%;
+      }
 
-    .menu {
-      display: flex;
-    }
+      p {
+        font-size: 2.3rem;
+        margin: 0 7rem;
+      }
 
-    nav {
-      display: flex;
-      flex-direction: row;
-      // display: inline-block;
-      a {
-        width: 16%;
-        margin: 0 auto;
-        font-size: 2.7rem;
-        background-color: @c-c-1;
-        color: @c-c-0;
+      ul, li {
+        font-size: 2.3rem;
+        list-style-type: square;
+      }
+
+      li {
+        margin: 0 10rem;
       }
     }
   }
-.content{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  .container1 {
-    //display: flex;
-    //justify-content: center;
-    //align-content: center;
-    margin: 5% .5%;
-    //border: 3px solid blue;
-    width: 48%;
-    //p, ul, li{
-    //}
-    h1{
-      text-align:center;
-      //margin:1% 10%;
-    }
-    p{
-      font-size: 2.3rem;
-      margin: 0 7rem;
-    }
-    ul, li{
-      font-size: 2.3rem;
-      list-style-type: square;
-    }
-    li{
-      margin: 0 10rem;
-  }
-}}
 }
