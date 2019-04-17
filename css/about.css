@@ -172,8 +172,10 @@ p {
   display: flex;
   justify-content: center;
   align-content: center;
+  align-items: center;
   flex-direction: column;
   min-width: 300px;
+  height: 100%;
 }
 img {
   display: block;
@@ -261,10 +263,88 @@ nav a {
     margin-bottom: 5%;
   }
 }
+.tabs {
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+}
+.tabs .tabs-items {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  font-size: 1rem;
+}
+.tabs .tabs-item {
+  display: none;
+  height: 100%;
+  width: 75%;
+}
+.tabs .tabs-item .tabs-item-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.tabs .tabs-item-selected {
+  display: block;
+}
+.tabs .tabs-links {
+  display: flex;
+  background-color: #617BC9;
+}
+.tabs .tabs-link {
+  padding: 1rem 1rem;
+  font-size: 1.7rem;
+  background-color: #617BC9;
+  border-right: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+.tabs .tabs-link:hover {
+  background-color: #C4A852;
+}
+.tabs .tabs-link-selected {
+  z-index: 2;
+  border-right: 1px solid #617BC9;
+  background-color: white;
+  color: black;
+}
+.tabs .tabs-link-selected:hover {
+  background-color: white;
+}
+.tabs .tabsht .tab-image img {
+  width: 25%;
+}
+@media (min-width: 500px) {
+  .container .tabs {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .container .tabs .tabs-link {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+  .container .tabs-sht .tab-img img {
+    width: 100%;
+  }
+}
+@media (min-width: 1000px) {
+  .tabs {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .tabs .tabs-link {
+    font-size: 3rem;
+    padding: 2rem 2rem;
+  }
+}
 .about-container {
   display: flex;
   justify-content: center;
   align-content: center;
+  align-items: baseline;
   flex-direction: column;
 }
 .about-content img {
@@ -295,11 +375,12 @@ nav a {
     display: flex;
     justify-content: center;
     align-content: center;
+    align-items: baseline;
     flex-direction: column;
   }
 }
 footer {
-  margin: 5% 0;
+  margin: 40% 0 5%;
   text-align: center;
 }
 .container {
