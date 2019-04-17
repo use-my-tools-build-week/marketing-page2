@@ -1,0 +1,325 @@
+/* Main Complement color */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: square;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 8px;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #617BC9;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #617BC9;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  margin: 0.5rem;
+}
+.container {
+  min-width: 1000px;
+  width: 100%;
+  margin: 3% auto;
+}
+.container {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 300px;
+  height: 100%;
+}
+img {
+  display: block;
+  margin: 2% auto;
+}
+.hdr-mn .mn-hdr {
+  margin-top: 10px;
+  text-align: center;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.menu {
+  display: none;
+}
+.menu--open {
+  font-size: 5rem;
+  text-align: center;
+}
+.menu-button {
+  cursor: pointer;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+nav a {
+  padding: 0.5rem;
+  margin: 0 10% 1rem 10%;
+  text-decoration: none;
+  color: #617BC9;
+  font-size: 2.4rem;
+  font-family: 'Asap', sans-serif;
+  text-align: center;
+  background-color: #C4A852;
+}
+@media (min-width: 500px) {
+  .container {
+    background-color: black;
+  }
+  .container nav a {
+    background-color: #C4A852;
+    color: #617BC9;
+    font-size: 2.8rem;
+  }
+}
+.menu--open {
+  font-size: 5rem;
+  text-align: center;
+}
+.menu-button {
+  cursor: pointer;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+nav a {
+  padding: 0.5rem;
+  margin: 0 10% 1rem 10%;
+  text-decoration: none;
+  color: #617BC9;
+  font-size: 2.4rem;
+  font-family: 'Asap', sans-serif;
+  text-align: center;
+  background-color: #C4A852;
+}
+@media (min-width: 1000px) {
+  .container .fa-tools {
+    display: none;
+  }
+  .container .menu {
+    display: flex;
+  }
+  .container nav {
+    display: flex;
+    flex-direction: row;
+  }
+  .container nav a {
+    width: 16%;
+    margin: 0 auto;
+    font-size: 2.7rem;
+    margin-bottom: 5%;
+  }
+}
+.imgs {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 3%;
+  width: 90%;
+}
+.container1 {
+  margin: 5% 0.5%;
+  width: 99%;
+}
+.container1 p {
+  font-size: 2.1rem;
+}
+.container1 ul,
+.container1 li {
+  font-size: 2.3rem;
+  list-style-type: square;
+}
+.container1 li {
+  margin-left: 2rem;
+}
+@media (min-width: 500px) {
+  nav a {
+    font-size: 2.8rem;
+  }
+}
+@media (min-width: 1000px) {
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+  .content .container1 {
+    margin: 5% 0.5%;
+    width: 48%;
+  }
+  .content .container1 h1 {
+    text-align: center;
+  }
+  .content .container1 p {
+    font-size: 2.3rem;
+    margin: 0 7rem;
+  }
+  .content .container1 ul,
+  .content .container1 li {
+    font-size: 2.3rem;
+    list-style-type: square;
+  }
+  .content .container1 li {
+    margin: 0 10rem;
+  }
+}
+footer {
+  margin: 40% 0 5%;
+  text-align: center;
+}
