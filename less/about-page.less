@@ -1,0 +1,43 @@
+.about-container{
+  border: 3px solid deeppink;
+  width: 100%;
+  display: flex;
+  //flex-direction: column;
+  flex-wrap: wrap;
+  //justify-content: center;
+  align-items: center;
+}
+.about-content{
+  border: 3px solid crimson;
+  width: 100%;
+  .aboutphoto{
+    display: flex;
+    border: 3px solid purple;
+    img{
+      width: 50%;
+      height: 50%;
+      margin: 0 auto;
+    }
+  }
+  .aboutinfo{
+ border: 3px solid red;
+  text-align: center;
+   h4 {
+     font-size: 2rem;
+   }
+   h5{
+     font-size: 1.5rem;
+   }
+}
+}
+
+@media (min-width: 800px) {
+  .about-content{
+  display: flex;
+    flex-wrap: wrap;
+    width: 35%;
+  }
+}
+@media (min-width:1000px) {
+
+}
