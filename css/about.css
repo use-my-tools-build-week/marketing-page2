@@ -244,50 +244,58 @@ nav a {
   background-color: #C4A852;
 }
 @media (min-width: 1000px) {
-  .container {
-    background-color: black;
+  .container .fa-tools {
+    display: none;
+  }
+  .container .menu {
+    display: flex;
+  }
+  .container nav {
+    display: flex;
+    flex-direction: row;
   }
   .container nav a {
-    background-color: #C4A852;
-    color: #617BC9;
-    font-size: 3.1rem;
+    width: 16%;
+    margin: 0 auto;
+    font-size: 2.7rem;
+    margin-bottom: 5%;
   }
 }
 .about-container {
-  border: 3px solid deeppink;
-  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
-.about-content {
-  border: 3px solid crimson;
-  width: 100%;
-}
-.about-content .aboutphoto {
-  display: flex;
-  border: 3px solid purple;
-}
-.about-content .aboutphoto img {
+.about-content img {
   width: 50%;
   height: 50%;
   margin: 0 auto;
 }
-.about-content .aboutinfo {
-  border: 3px solid red;
+.aboutinfo {
   text-align: center;
 }
-.about-content .aboutinfo h4 {
+.aboutinfo h4 {
   font-size: 2rem;
 }
-.about-content .aboutinfo h5 {
+.aboutinfo h5 {
   font-size: 1.5rem;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .about-content {
     display: flex;
     flex-wrap: wrap;
-    width: 35%;
+    justify-content: space-between;
+  }
+  .about-content .about-container {
+    width: 33.3%;
+  }
+  .about-content .about-container .aboutphoto {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
   }
 }
 footer {
