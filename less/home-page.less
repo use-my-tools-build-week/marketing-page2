@@ -13,9 +13,11 @@
     width: 99%;
 
     p{
+      font-face:@ft1;
       font-size: 2.1rem;
     }
     ul, li{
+      font-face:@ft1;
       font-size: 2.3rem;
       list-style-type: square;
     }
@@ -32,18 +34,21 @@
 @media @desk{
   .content {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    .container1 {
-      //display: flex;
+
+       //display: flex;
       //justify-content: center;
       //align-content: center;
       margin: 5% .5%;
       //border: 3px solid blue;
-      width: 48%;
+      width:80%;
       //p, ul, li{
       //}
+
+
       h1 {
         text-align: center;
         //margin:1% 10%;
@@ -63,5 +68,7 @@
         margin: 0 10rem;
       }
     }
+  .imgs {
+    width: 80%;
   }
 }

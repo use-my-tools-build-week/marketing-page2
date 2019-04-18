@@ -238,6 +238,7 @@ nav button {
   }
   .container header nav {
     display: flex;
+    margin-top: 5%;
     flex-direction: row;
     justify-content: center;
     width: 100%;
@@ -267,10 +268,12 @@ nav button {
   width: 99%;
 }
 .container1 p {
+  font-face: 'open sans', 'sans-serif';
   font-size: 2.1rem;
 }
 .container1 ul,
 .container1 li {
+  font-face: 'open sans', 'sans-serif';
   font-size: 2.3rem;
   list-style-type: square;
 }
@@ -285,28 +288,30 @@ nav button {
 @media (min-width: 1000px) {
   .content {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-  }
-  .content .container1 {
     margin: 5% 0.5%;
-    width: 48%;
+    width: 80%;
   }
-  .content .container1 h1 {
+  .content h1 {
     text-align: center;
   }
-  .content .container1 p {
+  .content p {
     font-size: 2.3rem;
     margin: 0 7rem;
   }
-  .content .container1 ul,
-  .content .container1 li {
+  .content ul,
+  .content li {
     font-size: 2.3rem;
     list-style-type: square;
   }
-  .content .container1 li {
+  .content li {
     margin: 0 10rem;
+  }
+  .imgs {
+    width: 80%;
   }
 }
 footer {
