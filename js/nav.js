@@ -9,7 +9,7 @@ const siteContent = {
         "nav-item-6": "Renters",
         "nav-item-7": "Borrowers"}}
 
-const navBar = document.querySelectorAll("a");
+const navBar = document.querySelectorAll("button");
 for (let i = 0; i <navBar.length; i++) {
     navBar[i].textContent = siteContent["nav"][`nav-item-${i + 1}`];
 }

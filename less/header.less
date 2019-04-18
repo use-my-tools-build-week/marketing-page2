@@ -1,7 +1,7 @@
 .container {
-  background-color: black;
+  background-color: @c-c-4;
   .flex(center,center,center);
-  min-width: 300px;
+  min-width: 500px;
 height: 100%;
 }
 img{
@@ -12,7 +12,7 @@ margin: 2% auto;
     .mn-hdr {
       margin-top: 10px;
       text-align: center;
-      font-family: @ft5;
+      font-family: @ft1;
     }}
 
 
@@ -37,25 +37,25 @@ nav{
   flex-direction:column;
   justify-content:center;
   width:100%;
-  a{
-    //border:3px solid grey;
-    padding:.50rem;
-    margin: 0 10% 1rem 10%;
-    text-decoration:none;
-    color:@c-c-0;
-    font-size:2.4rem;
-    font-family:@ft3; //change
-    text-align:center;
-    background-color: @c-c-1;
+  button{
+    height: 7%;
+    width: 80%;
+    background-color: @c-c-0;
+    border-radius: 4px;
+    color: @c-c-4;
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin: 2% auto;
+
   }
 
 }
 @media @tab{
   .container{
-    background-color:black;
+    background-color: @c-c-4;
     nav a{
-      background-color:@c-c-1;
-      color: @c-c-0;
+      background-color: @c-c-1;
+      color: @c-c-3;
       font-size: 2.8rem;
     }
   }
@@ -76,28 +76,14 @@ nav{
   // display:none;
   cursor:pointer;
 }
-nav{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  width:100%;
-  a{
-    //border:3px solid grey;
-    padding:.50rem;
-    margin: 0 10% 1rem 10%;
-    text-decoration:none;
-    color:@c-c-0;
-    font-size:2.4rem;
-    font-family:@ft3; //change
-    text-align:center;
-    background-color: @c-c-1;
-  }
 
-}
+
+
+
 @media @desk {
   .container {
 
-    .fa-tools {
+    .fa-bars {
       display: none;
     }
 
@@ -105,14 +91,21 @@ nav{
       display: flex;
     }
 
-    nav {
-      display: flex;
-      flex-direction: row;
-       a {
-        width: 16%;
-        margin: 0 auto;
-        font-size: 2.7rem;
-margin-bottom: 5%;
-      }
+ header   nav{
+   display:flex;
+   flex-direction:row;
+   justify-content:center;
+   width:100%;
+   button{
+     height: 70%;
+     width: 100%;
+     background-color: @c-c-0;
+     border-radius: 4px;
+     color: @c-c-4;
+     font-size: 2.3rem;
+     font-weight: bold;
+     margin: 1.5% 5%;
+
+   }
     }
   }}

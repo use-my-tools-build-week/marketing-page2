@@ -135,16 +135,16 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
-  color: #617BC9;
+  font-family: 'open sans', 'sans-serif';
+  color: black;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
-  color: #617BC9;
+  font-family: 'open sans', 'sans-serif';
+  color: black;
 }
 h1 {
   font-size: 4rem;
@@ -158,7 +158,7 @@ h3 {
 p {
   font-size: 1.6rem;
   line-height: 2rem;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'open sans', 'sans-serif';
   font-weight: 700;
   margin: 0.5rem;
 }
@@ -168,13 +168,13 @@ p {
   margin: 3% auto;
 }
 .container {
-  background-color: black;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
   flex-direction: column;
-  min-width: 300px;
+  min-width: 500px;
   height: 100%;
 }
 img {
@@ -184,7 +184,7 @@ img {
 .hdr-mn .mn-hdr {
   margin-top: 10px;
   text-align: center;
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: 'open sans', 'sans-serif';
 }
 .menu {
   display: none;
@@ -202,23 +202,23 @@ nav {
   justify-content: center;
   width: 100%;
 }
-nav a {
-  padding: 0.5rem;
-  margin: 0 10% 1rem 10%;
-  text-decoration: none;
-  color: #617BC9;
-  font-size: 2.4rem;
-  font-family: 'Asap', sans-serif;
-  text-align: center;
-  background-color: #C4A852;
+nav button {
+  height: 7%;
+  width: 80%;
+  background-color: #617BC9;
+  border-radius: 4px;
+  color: white;
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin: 2% auto;
 }
-@media (min-width: 500px) {
+@media (min-width: 800px) {
   .container {
-    background-color: black;
+    background-color: white;
   }
   .container nav a {
     background-color: #C4A852;
-    color: #617BC9;
+    color: black;
     font-size: 2.8rem;
   }
 }
@@ -229,44 +229,32 @@ nav a {
 .menu-button {
   cursor: pointer;
 }
-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-}
-nav a {
-  padding: 0.5rem;
-  margin: 0 10% 1rem 10%;
-  text-decoration: none;
-  color: #617BC9;
-  font-size: 2.4rem;
-  font-family: 'Asap', sans-serif;
-  text-align: center;
-  background-color: #C4A852;
-}
 @media (min-width: 1000px) {
-  .container .fa-tools {
+  .container .fa-bars {
     display: none;
   }
   .container .menu {
     display: flex;
   }
-  .container nav {
+  .container header nav {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    width: 100%;
   }
-  .container nav a {
-    width: 16%;
-    margin: 0 auto;
-    font-size: 2.7rem;
-    margin-bottom: 5%;
+  .container header nav button {
+    height: 70%;
+    width: 100%;
+    background-color: #617BC9;
+    border-radius: 4px;
+    color: white;
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin: 1.5% 5%;
   }
 }
 .tabs {
-  width: 90%;
-  margin: 0 auto;
-  height: 100%;
+  width: 100%;
 }
 .tabs .tabs-items {
   width: 100%;
@@ -274,15 +262,13 @@ nav a {
   display: flex;
   justify-content: center;
   padding-top: 60px;
-  font-size: 1rem;
 }
 .tabs .tabs-item {
   display: none;
-  height: 100%;
   width: 75%;
 }
 .tabs .tabs-item .tabs-item-title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   padding-bottom: 10px;
 }
@@ -294,8 +280,9 @@ nav a {
   background-color: #617BC9;
 }
 .tabs .tabs-link {
-  padding: 1rem 1rem;
-  font-size: 1.7rem;
+  padding: 20px 25px;
+  font-size: 1.2rem;
+  text-align: center;
   background-color: #617BC9;
   border-right: 1px solid white;
   color: white;
@@ -307,37 +294,12 @@ nav a {
 .tabs .tabs-link-selected {
   z-index: 2;
   border-right: 1px solid #617BC9;
-  background-color: white;
+  background-color: #C4A852;
   color: black;
 }
-.tabs .tabs-link-selected:hover {
-  background-color: white;
-}
-.tabs .tabsht .tab-image img {
-  width: 25%;
-}
-@media (min-width: 500px) {
-  .container .tabs {
-    width: 90%;
-    height: 100%;
-    margin: 0 auto;
-  }
-  .container .tabs .tabs-link {
-    padding: 1rem;
-    font-size: 2rem;
-  }
-  .container .tabs-sht .tab-img img {
-    width: 100%;
-  }
-}
-@media (min-width: 1000px) {
-  .tabs {
-    width: 90%;
-    margin: 0 auto;
-  }
+@media (min-width: 800px) {
   .tabs .tabs-link {
-    font-size: 3rem;
-    padding: 2rem 2rem;
+    font-size: 1.7rem;
   }
 }
 .about-container {
@@ -360,6 +322,17 @@ nav a {
 }
 .aboutinfo h5 {
   font-size: 1.5rem;
+}
+.tabs-item-description {
+  min-width: 300px;
+  max-width: 800px;
+  margin-left: -12%;
+}
+.tabs-item-description .tabs-item-title {
+  margin: 0;
+}
+.images-about {
+  width: 50%;
 }
 @media (min-width: 1000px) {
   .about-content {
@@ -388,7 +361,7 @@ footer {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  background-color: black;
+  background-color: white;
   min-width: 300px;
-  font-family: 'Asap', sans-serif;
+  font-family: 'open sans', 'sans-serif';
 }
