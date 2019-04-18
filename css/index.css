@@ -174,7 +174,7 @@ p {
   align-content: center;
   align-items: center;
   flex-direction: column;
-  min-width: 300px;
+  min-width: 500px;
   height: 100%;
 }
 img {
@@ -212,7 +212,7 @@ nav button {
   font-weight: bold;
   margin: 2% auto;
 }
-@media (min-width: 500px) {
+@media (min-width: 800px) {
   .container {
     background-color: white;
   }
@@ -277,7 +277,7 @@ nav button {
 .container1 li {
   margin-left: 2rem;
 }
-@media (min-width: 500px) {
+@media (min-width: 800px) {
   nav a {
     font-size: 2.8rem;
   }
