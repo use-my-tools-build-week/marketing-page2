@@ -135,16 +135,16 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
-  color: #617BC9;
+  font-family: 'open sans', 'sans-serif';
+  color: black;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
-  color: #617BC9;
+  font-family: 'open sans', 'sans-serif';
+  color: black;
 }
 h1 {
   font-size: 4rem;
@@ -158,7 +158,7 @@ h3 {
 p {
   font-size: 1.6rem;
   line-height: 2rem;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'open sans', 'sans-serif';
   font-weight: 700;
   margin: 0.5rem;
 }
@@ -168,12 +168,14 @@ p {
   margin: 3% auto;
 }
 .container {
-  background-color: black;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-content: center;
+  align-items: center;
   flex-direction: column;
-  min-width: 300px;
+  min-width: 500px;
+  height: 100%;
 }
 img {
   display: block;
@@ -182,7 +184,7 @@ img {
 .hdr-mn .mn-hdr {
   margin-top: 10px;
   text-align: center;
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: 'open sans', 'sans-serif';
 }
 .menu {
   display: none;
@@ -200,23 +202,23 @@ nav {
   justify-content: center;
   width: 100%;
 }
-nav a {
-  padding: 0.5rem;
-  margin: 0 10% 1rem 10%;
-  text-decoration: none;
-  color: #617BC9;
-  font-size: 2.4rem;
-  font-family: 'Asap', sans-serif;
-  text-align: center;
-  background-color: #C4A852;
+nav button {
+  height: 7%;
+  width: 80%;
+  background-color: #617BC9;
+  border-radius: 4px;
+  color: white;
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin: 2% auto;
 }
-@media (min-width: 500px) {
+@media (min-width: 800px) {
   .container {
-    background-color: black;
+    background-color: white;
   }
   .container nav a {
     background-color: #C4A852;
-    color: #617BC9;
+    color: black;
     font-size: 2.8rem;
   }
 }
@@ -227,43 +229,36 @@ nav a {
 .menu-button {
   cursor: pointer;
 }
-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-}
-nav a {
-  padding: 0.5rem;
-  margin: 0 10% 1rem 10%;
-  text-decoration: none;
-  color: #617BC9;
-  font-size: 2.4rem;
-  font-family: 'Asap', sans-serif;
-  text-align: center;
-  background-color: #C4A852;
-}
 @media (min-width: 1000px) {
-  .container .fa-tools {
+  .container .fa-bars {
     display: none;
   }
   .container .menu {
     display: flex;
   }
-  .container nav {
+  .container header nav {
     display: flex;
+    margin-top: 5%;
     flex-direction: row;
+    justify-content: center;
+    width: 100%;
   }
-  .container nav a {
-    width: 16%;
-    margin: 0 auto;
-    font-size: 2.7rem;
+  .container header nav button {
+    height: 70%;
+    width: 100%;
+    background-color: #617BC9;
+    border-radius: 4px;
+    color: white;
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin: 1.5% 5%;
   }
 }
 .imgs {
   display: flex;
   justify-content: space-around;
   align-content: center;
+  align-items: center;
   flex-direction: column;
   margin-bottom: 3%;
   width: 90%;
@@ -273,17 +268,19 @@ nav a {
   width: 99%;
 }
 .container1 p {
+  font-face: 'open sans', 'sans-serif';
   font-size: 2.1rem;
 }
 .container1 ul,
 .container1 li {
+  font-face: 'open sans', 'sans-serif';
   font-size: 2.3rem;
   list-style-type: square;
 }
 .container1 li {
   margin-left: 2rem;
 }
-@media (min-width: 500px) {
+@media (min-width: 800px) {
   nav a {
     font-size: 2.8rem;
   }
@@ -291,31 +288,42 @@ nav a {
 @media (min-width: 1000px) {
   .content {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-  }
-  .content .container1 {
     margin: 5% 0.5%;
-    width: 48%;
+    width: 80%;
   }
-  .content .container1 h1 {
+  .content h1 {
     text-align: center;
   }
-  .content .container1 p {
+  .content p {
     font-size: 2.3rem;
     margin: 0 7rem;
   }
-  .content .container1 ul,
-  .content .container1 li {
+  .content ul,
+  .content li {
     font-size: 2.3rem;
     list-style-type: square;
   }
-  .content .container1 li {
+  .content li {
     margin: 0 10rem;
+  }
+  .imgs {
+    width: 80%;
   }
 }
 footer {
-  margin: 5% 0;
+  margin: 40% 0 5%;
   text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background-color: white;
+  min-width: 300px;
+  font-family: 'open sans', 'sans-serif';
 }

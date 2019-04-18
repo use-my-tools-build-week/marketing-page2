@@ -22,4 +22,10 @@ Commits 14-22
 * Updated the HTML and LESS
 * Upated the Changelog
 
-Commits 22-
+Commits 22-36
+* Responive Desktop
+* Added About Page
+* Updated About Page
+
+Commits 36-End
+* Polishing

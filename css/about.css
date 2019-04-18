@@ -135,16 +135,16 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
-  color: #617BC9;
+  font-family: 'open sans', 'sans-serif';
+  color: black;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
-  color: #617BC9;
+  font-family: 'open sans', 'sans-serif';
+  color: black;
 }
 h1 {
   font-size: 4rem;
@@ -158,7 +158,7 @@ h3 {
 p {
   font-size: 1.6rem;
   line-height: 2rem;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'open sans', 'sans-serif';
   font-weight: 700;
   margin: 0.5rem;
 }
@@ -168,12 +168,14 @@ p {
   margin: 3% auto;
 }
 .container {
-  background-color: black;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-content: center;
+  align-items: center;
   flex-direction: column;
-  min-width: 300px;
+  min-width: 500px;
+  height: 100%;
 }
 img {
   display: block;
@@ -182,7 +184,7 @@ img {
 .hdr-mn .mn-hdr {
   margin-top: 10px;
   text-align: center;
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: 'open sans', 'sans-serif';
 }
 .menu {
   display: none;
@@ -200,23 +202,23 @@ nav {
   justify-content: center;
   width: 100%;
 }
-nav a {
-  padding: 0.5rem;
-  margin: 0 10% 1rem 10%;
-  text-decoration: none;
-  color: #617BC9;
-  font-size: 2.4rem;
-  font-family: 'Asap', sans-serif;
-  text-align: center;
-  background-color: #C4A852;
+nav button {
+  height: 7%;
+  width: 80%;
+  background-color: #617BC9;
+  border-radius: 4px;
+  color: white;
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin: 2% auto;
 }
-@media (min-width: 500px) {
+@media (min-width: 800px) {
   .container {
-    background-color: black;
+    background-color: white;
   }
   .container nav a {
     background-color: #C4A852;
-    color: #617BC9;
+    color: black;
     font-size: 2.8rem;
   }
 }
@@ -227,71 +229,131 @@ nav a {
 .menu-button {
   cursor: pointer;
 }
-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+@media (min-width: 1000px) {
+  .container .fa-bars {
+    display: none;
+  }
+  .container .menu {
+    display: flex;
+  }
+  .container header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  .container header nav button {
+    height: 70%;
+    width: 100%;
+    background-color: #617BC9;
+    border-radius: 4px;
+    color: white;
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin: 1.5% 5%;
+  }
+}
+.tabs {
   width: 100%;
 }
-nav a {
-  padding: 0.5rem;
-  margin: 0 10% 1rem 10%;
-  text-decoration: none;
-  color: #617BC9;
-  font-size: 2.4rem;
-  font-family: 'Asap', sans-serif;
+.tabs .tabs-items {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+.tabs .tabs-item {
+  display: none;
+  width: 75%;
+}
+.tabs .tabs-item .tabs-item-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.tabs .tabs-item-selected {
+  display: block;
+}
+.tabs .tabs-links {
+  display: flex;
+  background-color: #617BC9;
+}
+.tabs .tabs-link {
+  padding: 20px 25px;
+  font-size: 1.2rem;
   text-align: center;
+  background-color: #617BC9;
+  border-right: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+.tabs .tabs-link:hover {
   background-color: #C4A852;
 }
-@media (min-width: 1000px) {
-  .container {
-    background-color: black;
-  }
-  .container nav a {
-    background-color: #C4A852;
-    color: #617BC9;
-    font-size: 3.1rem;
+.tabs .tabs-link-selected {
+  z-index: 2;
+  border-right: 1px solid #617BC9;
+  background-color: #C4A852;
+  color: black;
+}
+@media (min-width: 800px) {
+  .tabs .tabs-link {
+    font-size: 1.7rem;
   }
 }
 .about-container {
-  border: 3px solid deeppink;
-  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  justify-content: center;
+  align-content: center;
+  align-items: baseline;
+  flex-direction: column;
 }
-.about-content {
-  border: 3px solid crimson;
-  width: 100%;
-}
-.about-content .aboutphoto {
-  display: flex;
-  border: 3px solid purple;
-}
-.about-content .aboutphoto img {
+.about-content img {
   width: 50%;
   height: 50%;
   margin: 0 auto;
 }
-.about-content .aboutinfo {
-  border: 3px solid red;
+.aboutinfo {
   text-align: center;
 }
-.about-content .aboutinfo h4 {
+.aboutinfo h4 {
   font-size: 2rem;
 }
-.about-content .aboutinfo h5 {
+.aboutinfo h5 {
   font-size: 1.5rem;
 }
-@media (min-width: 800px) {
+.tabs-item-description {
+  min-width: 300px;
+  max-width: 800px;
+  margin-left: -12%;
+}
+.tabs-item-description .tabs-item-title {
+  margin: 0;
+}
+.images-about {
+  width: 50%;
+}
+@media (min-width: 1000px) {
   .about-content {
     display: flex;
     flex-wrap: wrap;
-    width: 35%;
+    justify-content: space-between;
+  }
+  .about-content .about-container {
+    width: 33.3%;
+  }
+  .about-content .about-container .aboutphoto {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: baseline;
+    flex-direction: column;
   }
 }
 footer {
-  margin: 5% 0;
+  margin: 40% 0 5%;
   text-align: center;
 }
 .container {
@@ -299,7 +361,7 @@ footer {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  background-color: black;
+  background-color: white;
   min-width: 300px;
-  font-family: 'Asap', sans-serif;
+  font-family: 'open sans', 'sans-serif';
 }
