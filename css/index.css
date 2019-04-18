@@ -135,16 +135,16 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
-  color: #617BC9;
+  font-family: 'open sans', 'sans-serif';
+  color: black;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
-  color: #617BC9;
+  font-family: 'open sans', 'sans-serif';
+  color: black;
 }
 h1 {
   font-size: 4rem;
@@ -158,7 +158,7 @@ h3 {
 p {
   font-size: 1.6rem;
   line-height: 2rem;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'open sans', 'sans-serif';
   font-weight: 700;
   margin: 0.5rem;
 }
@@ -168,7 +168,7 @@ p {
   margin: 3% auto;
 }
 .container {
-  background-color: black;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -184,7 +184,7 @@ img {
 .hdr-mn .mn-hdr {
   margin-top: 10px;
   text-align: center;
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: 'open sans', 'sans-serif';
 }
 .menu {
   display: none;
@@ -202,23 +202,23 @@ nav {
   justify-content: center;
   width: 100%;
 }
-nav a {
-  padding: 0.5rem;
-  margin: 0 10% 1rem 10%;
-  text-decoration: none;
-  color: #617BC9;
-  font-size: 2.4rem;
-  font-family: 'Asap', sans-serif;
-  text-align: center;
-  background-color: #C4A852;
+nav button {
+  height: 7%;
+  width: 80%;
+  background-color: #617BC9;
+  border-radius: 4px;
+  color: white;
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin: 2% auto;
 }
 @media (min-width: 500px) {
   .container {
-    background-color: black;
+    background-color: white;
   }
   .container nav a {
     background-color: #C4A852;
-    color: #617BC9;
+    color: black;
     font-size: 2.8rem;
   }
 }
@@ -229,24 +229,8 @@ nav a {
 .menu-button {
   cursor: pointer;
 }
-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-}
-nav a {
-  padding: 0.5rem;
-  margin: 0 10% 1rem 10%;
-  text-decoration: none;
-  color: #617BC9;
-  font-size: 2.4rem;
-  font-family: 'Asap', sans-serif;
-  text-align: center;
-  background-color: #C4A852;
-}
 @media (min-width: 1000px) {
-  .container .fa-tools {
+  .container .fa-bars {
     display: none;
   }
   .container .menu {
@@ -255,13 +239,18 @@ nav a {
   .container header nav {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    width: 100%;
   }
-  .container header nav a {
-    width: 22%;
-    margin: 0 15%;
-    padding: 2%;
-    font-size: 2.7rem;
-    margin-bottom: 5%;
+  .container header nav button {
+    height: 70%;
+    width: 100%;
+    background-color: #617BC9;
+    border-radius: 4px;
+    color: white;
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin: 1.5% 5%;
   }
 }
 .imgs {
@@ -323,4 +312,13 @@ nav a {
 footer {
   margin: 40% 0 5%;
   text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background-color: white;
+  min-width: 300px;
+  font-family: 'open sans', 'sans-serif';
 }
